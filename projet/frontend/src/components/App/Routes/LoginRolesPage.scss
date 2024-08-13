@@ -1,0 +1,41 @@
+@use '../../../styles/variables' as v;
+
+.choose-role{
+    margin: auto;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    &-welcome{
+        font-weight: 700;
+    }
+
+    &-introduction{
+        text-transform: uppercase;
+        align-self: flex-start;
+    }
+
+    &-button{
+        background-color: v.$color-green;
+        color: v.$color-darkest;
+        font-weight: 700;
+        border: none;
+        border-radius: 6px;
+        padding: 0.7em 0.8em;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img{
+            width:  40px;
+        }
+        
+    }
+}
+

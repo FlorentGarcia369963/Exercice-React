@@ -1,0 +1,35 @@
+@use '../../../styles/variables' as v;
+
+.form-container{
+    margin: auto;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+
+    &-input{
+        border-radius: 6px;
+        border: none;
+        background-color: v.$color-light;
+        padding: 0.3em 0.6em;
+    }
+
+    &-button{
+        background-color: v.$color-dark-green;
+        color: v.$color-lightest;
+        border: none;
+        border-radius: 6px;
+        padding: 0.5em 2em;
+        cursor: pointer;
+    }
+}
+

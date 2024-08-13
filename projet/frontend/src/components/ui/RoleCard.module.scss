@@ -1,0 +1,7 @@
+@use '../../styles/mixins';
+
+.role_card {
+  @include mixins.role_card;
+
+
+}

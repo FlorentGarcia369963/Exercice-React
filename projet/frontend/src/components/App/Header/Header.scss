@@ -1,0 +1,43 @@
+@use '../../../styles/variables' as v;
+
+header {
+  height: 64px;
+  background-color: v.$color-green;
+  display: flex;
+  gap: v.$gutter;
+
+  h1 {
+    font-size: 1.5rem;
+    margin: auto 0;
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+    mix-blend-mode: darken;
+  }
+
+  div{
+    margin: auto;
+    font-size: 1.4rem;
+    font-style: italic;
+
+  }
+  
+  a:nth-last-child(1) {
+    margin-left: auto;
+    
+    img {
+      padding: v.$gutter;
+    }
+  }
+}
+
+.theme{
+  &-light{
+  background-color: #f0f;
+}
+&-dark{
+  background-color: rgb(73, 18, 73);
+}
+}

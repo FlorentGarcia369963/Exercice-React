@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && npm run dev",
+    "dev": "npm run dev:back & npm run dev:front ",
+    "dev:back": "nodemon -L index.js",
+    "dev:front": "npm run dev --prefix ../frontend",
+    "swagger": "node ./swagger.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "swagger-autogen": "^2.23.7"
+  }
+}
